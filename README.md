@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Create the README.md file content in markdown format
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+readme_content = """
+# Invoice Upload App with Login and Formik
 
-## Available Scripts
+This project is a React application built with **Create React App**. It replicates an invoice form design and includes a **login system**, **PDF upload and preview**, and **Formik-powered form** with **localStorage** for session and data persistence.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## # Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### # 1. Login System (No Backend)
+- Users can log in using any username and password.
+- Form validation is handled using **Formik + Yup**.
+- Session is stored in `localStorage`.
+- Auto-login support: users stay logged in after refresh.
+- Logout functionality clears session and redirects to login.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### # 2. Invoice Form UI
+- Fully responsive and matches the reference design.
+- Form built using **Formik** with validation.
+- Sections:
+  - Vendor Details
+  - Invoice Details
+  - Expense Details
+  - Comments
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### # 3. PDF Upload and Display
+- Upload PDF using drag-and-drop or file input.
+- Preview the uploaded PDF in-app using `<iframe>` or `react-pdf`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### # 4. LocalStorage Persistence
+- Form data is saved to `localStorage` on submit.
+- Pre-populates fields when the user returns or reloads the page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### # 5. Dummy Data Auto-Fill
+- A "Fill with Dummy Data" button populates all form fields and loads a sample PDF instantly.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## # Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React.js** (CRA)
+- **Formik + Yup** (form validation)
+- **LocalStorage API** (data persistence)
+- **react-pdf** or `<iframe>` (PDF display)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## # Folder Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+src/ ├── components/ │ ├── Login.jsx │ ├── InvoiceForm.jsx │ ├── PDFUploader.jsx │ └── DummyDataButton.jsx ├── App.js ├── index.js └── utils/ └── dummyData.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+# Live Demo
+➡️ https://invoice-form-app-one.vercel.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### # Installation
 
-### Analyzing the Bundle Size
+```bash
+npm install
+# Start Development Server
+bash
+Always show details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Copy
+npm start
+Open http://localhost:3000
 
-### Making a Progressive Web App
+# Available Scripts
+npm start – Runs the app in development mode.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm run build – Builds the app for production.
 
-### Advanced Configuration
+npm test – Runs the test watcher in interactive mode.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm run eject – Ejects the configuration (not reversible).
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
