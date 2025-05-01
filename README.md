@@ -1,6 +1,3 @@
-# Create the README.md file content in markdown format
-
-readme_content = """
 # Invoice Upload App with Login and Formik
 
 This project is a React application built with **Create React App**. It replicates an invoice form design and includes a **login system**, **PDF upload and preview**, and **Formik-powered form** with **localStorage** for session and data persistence.
