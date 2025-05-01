@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './InvoiceViewer.css';
+import './css/InvoiceViewer.css';
 
 const InvoiceViewer = () => {
   const [pdfData, setPdfData] = useState(null);

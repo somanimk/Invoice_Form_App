@@ -4,7 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import InvoiceViewer from './InvoiceViewer';
 import LogoutButton from './LogoutButton';
-import './InvoiceForm.css';
+import './css/InvoiceForm.css';
 
 const InvoiceForm = ({ setUser }) => {
   const savedData = JSON.parse(localStorage.getItem('invoiceData')) || {};

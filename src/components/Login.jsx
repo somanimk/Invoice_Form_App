@@ -4,7 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 import { setUser } from '../utils/localStorage';
-import './Login.css';
+import './css/Login.css';
 
 const Login = ({ setUser: updateUser }) => {
   const navigate = useNavigate();
